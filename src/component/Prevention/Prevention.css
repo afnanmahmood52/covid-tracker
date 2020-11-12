@@ -1,0 +1,159 @@
+.preventionMain{
+    display: flex;
+    justify-content: center;
+}
+
+.prevention{
+    margin-top: 0.5rem;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.symptoms{
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.left-col{
+    width: 50vw;    
+}
+
+.text-content > h4{
+    color: green;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.text-content > h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.text-content > h5{
+    font-weight: 100;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+
+.text-content{
+    padding: 50px;
+}
+
+.right-col{
+    padding: 60px;
+}
+
+.right-col img{
+    display: block;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.precautions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prec-text > h4{
+    color: green;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.prec-text > h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.prec-text > h5{
+    font-weight: 100;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+
+.prec-text{
+    margin: 25px 0;
+    text-align: center;
+}
+
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scrollTop {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+    z-index: 99;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    background-color: royalblue;
+    color: white;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .prevention{
+        width: 100vw;
+    }
+
+    .symptoms{
+        flex-direction: column;
+    }
+
+    .left-col{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .text-content{
+        text-align: center;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+
+    .text-content > h4{
+        font-size: 1.6rem;
+    }
+    
+    .text-content > h1{
+        font-size: 3rem;
+    }
+    
+    .text-content > h5{
+        font-size: 1.2rem;
+    }
+
+    .right-col{
+        padding: 20px 0;
+    }
+    
+  } 

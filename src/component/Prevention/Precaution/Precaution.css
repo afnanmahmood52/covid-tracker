@@ -1,0 +1,39 @@
+.precaution-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid darkcyan;
+    text-align: center;
+    width: 18rem;
+    height: 20rem;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(250, 247, 245);    
+}
+
+.prec-img-section{
+    flex: 0.5;
+    width: 100%;
+    margin: auto;
+   
+}
+
+.prec-desc{
+    flex: 0.3;
+    padding: 0 20px;
+}
+
+.prec-desc > h2{
+    font-size: 1.5rem;
+}
+
+.precaution-card:hover{
+    background-color: rgb(231, 219, 205);
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 400px) {
+    .precaution-card{
+        margin: 20px 0px;
+    }
+  } 

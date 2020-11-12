@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+
+.navbar {
+    font-family: Mulish;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav_bg{
+    padding-top: 10px;
+}
+.navbar-brand{
+    margin-left: 10px;
+}
+
+
+.main-link {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    color: green;
+    text-decoration: none;
+}
+
+.dial-headline, .for-Animation {
+    text-align: center;
+    background: rgb(141, 35, 35);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dial-headline h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1vw;
+    padding-top: 5px;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+    font-size: 1rem;
+}
+
+nav .navbar-nav li a:hover{ 
+    color: rgb(73, 189, 83) !important;
+}
+
+.active-nav{
+   border-bottom: 2px solid rgb(73, 189, 83);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .active-nav{
+        border-bottom: none;
+     }
+}

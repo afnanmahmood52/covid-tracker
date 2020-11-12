@@ -1,0 +1,56 @@
+    .st0{fill:#D4EDF4;}
+	.st1{fill:#ACD8E2;}
+	.st2{fill:#F44A52;}
+	.st3{fill:#262626;}
+	.st4{fill:#338BD3;}
+	.st5{fill:#3DB5F2;}
+	.st6{fill:#6ED6FF;}
+	.st7{fill:#E57A65;}
+	.st8{fill:#F9B295;}
+	.st9{fill:#BA2A4C;}
+	.st10{fill:#F47A7A;}
+	.st11{fill:#683A2C;}
+	.st12{fill:#91583C;}
+	.st13{fill:#B27256;}
+	.st14{fill:#FFFFFF;}
+	.st15{fill:#2A7F49;}
+	.st16{fill:#73BF52;}
+	.st17{fill:#439E49;}
+    .st18{fill:#AFDD66;}
+    
+    #person_x5F_shadow{
+        animation: alternate person_animate 2s infinite ease-in-out;
+    }
+    
+    #danger{
+        animation: alternate person_animate 2s infinite ease-in-out;
+    }
+    
+    #person{
+        animation: alternate person_animate 2s infinite ease-in-out;
+    }
+    
+    
+    #virus_x5F_1, #virus_x5F_2, #virus_x5F_3, #virus_x5F_4, #virus_x5F_5, #virus_x5F_6 {
+        animation: virus_animate 10s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    
+    @keyframes virus_animate{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+    
+    @keyframes person_animate{
+        from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(10px);
+        }
+    }
