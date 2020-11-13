@@ -4,20 +4,22 @@ const url = 'https://covid19.mathdro.id/api'
 
 export const FetchData = async(country)=>{
     try {
-        console.log(country)
+        //console.log(country)
 
         let data = {}
-        if(country){
+        if(country && country !== "Global"){
             data = await axios.get(`${url}/countries/${country}`)
-            //console.log(data)    
+            //console.log("not global")
+            return data;
         }
-        else if (!country || country === 'Global') {
+
+        if (!country || country === "Global") {
             data = await axios.get(url)
-            //console.log(data)
+            //console.log("global")
+            return data;
         }
         //console.log(data)
-        return data;
-
+        
     } catch (error) {
         console.log(error)
     }

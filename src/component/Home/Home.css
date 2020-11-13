@@ -4,6 +4,11 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    overflow: hidden;
+}
+
+#exampleFormControlSelect1{
+    width: 55vw;
 }
 
 .image-SVG{
@@ -88,7 +93,9 @@
         font-weight: 700;
     }
     
-    
+    #exampleFormControlSelect1{
+        width: 50vw;
+    }
 }
 
 @media only screen and (max-width:700px){
@@ -118,6 +125,9 @@
         margin-top: 7px;
     }
 
+    #exampleFormControlSelect1{
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width:468px){

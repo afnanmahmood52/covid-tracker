@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import "./Contact.css"
-import AOS from "aos"
 import "../../../node_modules/aos/dist/aos.css"
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
@@ -21,11 +20,6 @@ export default function Contact() {
     };
   
   window.addEventListener('scroll', checkScrollTop)
-
-  useEffect(()=>{
-    AOS.init()
-    AOS.refresh()
-  },[]);
 
   return (
     <div className="container">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Route, Switch  } from 'react-router-dom';
 import './App.css';
 import About from './component/About/About';
@@ -9,8 +9,16 @@ import Home from './component/Home/Home';
 import Navbar from './component/Navbar';
 import Prevention from './component/Prevention/Prevention';
 
+import AOS from "aos"
+import "../node_modules/aos/dist/aos.css"
+
 function App() {
-   
+
+    useEffect(()=>{
+        AOS.init()
+        AOS.refresh()
+
+      },[]);
 
     return (
     <div className = "Main-App" >

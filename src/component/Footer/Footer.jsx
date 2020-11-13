@@ -8,7 +8,14 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
 
+
+
 export default function Footer() {
+
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
   return (
     <MDBFooter color="special-color-dark" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
@@ -32,23 +39,23 @@ export default function Footer() {
           <MDBCol className={classes.navigate} md="2">
             <h5 className="title">Navigate</h5>
             <ul>
-              <li className="list-unstyled">
+              <li className="list-unstyled" onClick={scrollTop}>
                 <Link to ='/'>Home</Link>
               </li>
               
-              <li className="list-unstyled">
+              <li className="list-unstyled" onClick={scrollTop}>
                 <Link to ='/about'>COVID-19</Link>
               </li>
 
-              <li className="list-unstyled">
+              <li className="list-unstyled" onClick={scrollTop}>
                 <Link to ='/prevention'>Preventition</Link>
               </li>
 
-              <li className="list-unstyled">
+              <li className="list-unstyled" onClick={scrollTop}>
                 <Link to ='/FAQ'>FAQ</Link>
               </li>
 
-              <li className="list-unstyled">
+              <li className="list-unstyled" onClick={scrollTop}>
                 <Link to ='/contact'>Contact</Link>
               </li>
 

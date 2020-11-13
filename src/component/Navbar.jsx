@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.js";
 import "./Navbar.css"
@@ -6,15 +6,9 @@ import CallIcon from '@material-ui/icons/Call';
 import BarChartOutlinedIcon from '@material-ui/icons/BarChartOutlined';
 import {NavLink} from 'react-router-dom';
 
-import AOS from "aos"
-import "../../node_modules/aos/dist/aos.css"
+
 
 export default function Navbar() {
-
-  useEffect(()=>{
-    AOS.init()
-    AOS.refresh()
-  },[]);
 
   return (
     <div className="main-div">
@@ -48,33 +42,33 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto nav-custom-links main-links">
               <li className="nav-item nl">
-                <NavLink exact className="nav-link" to="/" activeClassName="active-nav">
+                <NavLink exact className="nav-link" to="/" activeClassName="active-nav" id="n-item" >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item nl">
-                <NavLink className="nav-link" to="/about" activeClassName="active-nav">
+                <NavLink className="nav-link" to="/about" activeClassName="active-nav" id="n-item" >
                   COVID-19
                 </NavLink>
               </li>
 
               <li className="nav-item nl">
-                <NavLink className="nav-link" to="/prevention" activeClassName="active-nav">
+                <NavLink className="nav-link" to="/prevention" activeClassName="active-nav" id="n-item">
                   Prevention
                 </NavLink>
               </li>
 
               <li className="nav-item nl">
-                <NavLink className="nav-link" to="/FAQ" activeClassName="active-nav">
+                <NavLink className="nav-link" to="/FAQ" activeClassName="active-nav" id="n-item" >
                   FAQ
                 </NavLink>
               </li>
 
               <li className="nav-item nl">
-                <NavLink className="nav-link" to="/contact" activeClassName="active-nav">
+                <NavLink className="nav-link" to="/contact" activeClassName="active-nav" id="n-item">
                   Contact
                 </NavLink>
               </li>

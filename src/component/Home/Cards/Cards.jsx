@@ -11,11 +11,11 @@ export default function Cards(props) {
     if(props.gotData){
         return (
             <div className={styles.container}>
-                <Grid container spacing={3} justify="center" data-aos="fade-left" data-aos-duration="1200">
+                <Grid container spacing={3} justify="center">
                     <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Infected</Typography>
-                            <Typography variant="h5">
+                            <Typography color="textSecondary" gutterBottom>Total Infected</Typography>
+                            <Typography variant="h5" style={{fontWeight: '500', color:'rgb(86, 86, 196)'}}>
                             <CountUp
                             start={0}
                             end={props.data.confirmed.value}
@@ -31,8 +31,8 @@ export default function Cards(props) {
 
         <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>Recovered</Typography>
-                <Typography variant="h5">
+                <Typography color="textSecondary" gutterBottom>Total Recovered</Typography>
+                <Typography variant="h5" style={{fontWeight: '500', color:'rgb(17, 153, 17)'}}>
                 <CountUp
                         start={0}
                         end={props.data.recovered.value}
@@ -49,8 +49,8 @@ export default function Cards(props) {
 
         <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>Deaths</Typography>
-                <Typography variant="h5">
+                <Typography color="textSecondary" gutterBottom>Total Deaths</Typography>
+                <Typography variant="h5" style={{fontWeight: '500', color:'rgb(192, 2, 2)'}}>
                 <CountUp
                         start={0}
                         end={props.data.deaths.value}

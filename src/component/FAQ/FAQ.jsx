@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from 'react';
+import React, {useState} from 'react';
 
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
-import AOS from "aos"
 import "../../../node_modules/aos/dist/aos.css"
 
 import "./FAQ.css";
@@ -16,10 +15,6 @@ import "./FAQ.css";
 export default function FAQ() {
   let headColor = '#545e57'
 
-  useEffect(()=>{
-    AOS.init()
-    AOS.refresh()
-  },[]);
 
   const [showScroll, setShowScroll] = useState(false)
 

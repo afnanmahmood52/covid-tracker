@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import CoronaSVG from './CoronaSVG/CoronaSVG'
 import './Home.css'
-import AOS from "aos"
+
 import "../../../node_modules/aos/dist/aos.css"
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Cards from '../Home/Cards/Cards'
@@ -30,9 +30,6 @@ export default class Home extends Component {
       // const [data, setData] = useState({});
       // const [showScroll, setShowScroll] = useState(false)
 
-      AOS.init()
-      AOS.refresh()
-
       const response_data = await FetchData();
       const countries = await FetchCountries();
 
@@ -45,7 +42,7 @@ export default class Home extends Component {
         this.setState({ data : response_data.data, countries: countries, gotData: true});
       }
 
-      console.log(response_data.data)
+      //console.log(response_data.data)
       //console.log(this.state.countries)
 
     }
@@ -63,11 +60,11 @@ export default class Home extends Component {
     }
 
     async getCountry(event){
-      //cosnsole.log(event.target.value)
+      //console.log(event.target.value)
       this.setState({country: event.target.value})
 
       const response_data = await FetchData(event.target.value);
-      console.log(response_data.data)
+      //console.log(response_data.data)
 
       this.setState({ data : response_data.data, gotData: true});
       //console.log(this.state.country)
@@ -91,14 +88,14 @@ export default class Home extends Component {
         <h1>Select Country..</h1>
 
         <div className="form-group" id="country-select">
-          <select defaultValue="Afghanistan" onChange={this.getCountry} className="form-control" id="exampleFormControlSelect1" style={{width:'60vw'}}>
-            <option value="Global" key="Global">Global</option>
+          <select defaultValue="Afghanistan" onChange={this.getCountry} className="form-control" id="exampleFormControlSelect1" >
+            <option value="Global">Global</option>
             {
               this.state.countries.map((country,index) => <option value={country.name} key={country.name}>{country.name}</option> )
             }
           </select>
         </div>
-        {this.state.country}
+  
         <div className="cards-portion">
           <Cards key={'cards-portion'} data= {this.state.data} gotData={this.state.gotData} />
         </div>

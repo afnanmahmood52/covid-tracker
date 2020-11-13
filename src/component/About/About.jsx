@@ -1,17 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, { useState} from 'react'
 import AboutSection from './AboutSection/AboutSection'
 import about_data from './about_data'
 import './About.css'
-import AOS from "aos"
 import "../../../node_modules/aos/dist/aos.css"
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 export default function About() {
-  useEffect(()=>{
-    AOS.init()
-    AOS.refresh()
-  },[]);
-
+  
   const [showScroll, setShowScroll] = useState(false)
 
     const checkScrollTop = () => {

@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{ useState} from 'react'
 import "./Prevention.css"
 import doctor from "../../images/doctor.png"
 import cough from '../../images/symptom/cough.png'
@@ -9,18 +9,13 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './Precaution/Precaution'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
-import AOS from "aos"
 import "../../../node_modules/aos/dist/aos.css"
 import precaution_item from './precaution_item'
 import Precaution from './Precaution/Precaution'
 
 
 export default function Prevention() {
-  useEffect(()=>{
-    AOS.init()
-    AOS.refresh()
-  },[]);
-
+  
   const [showScroll, setShowScroll] = useState(false)
 
     const checkScrollTop = () => {
@@ -54,19 +49,19 @@ export default function Prevention() {
             <div className="indications">
 
               <Symptom
-              key={0}
+              key={'fever'}
               img={fever}
               title={'Fever'}
               desc={'This means you feel hot to touch on your chest or back (you do not need to measure your temperature). It is a common sign and also may appear in 2-10 days if you affected.'}/>
 
               <Symptom
-              key={1}
+              key={'cough'}
               img={cough}
               title={'Cough'}
               desc={'This means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).'}/>
 
               <Symptom
-              key={2}
+              key={'shortBreath'}
               img={shortBreath}
               title={'Shortness of Breath'}
               desc={'Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing or shortness of breath.'}/>
@@ -88,7 +83,7 @@ export default function Prevention() {
             <div className="cards-list">
               {
                 precaution_item.map( (card, i) =>{
-                  return <div className="card-item" data-aos="fade-right" data-aos-duration="1300">< Precaution key={i} image ={card.img} title={card.title}/></div>
+                  return <div className="card-item" data-aos="fade-right" data-aos-duration="1300" key={i}>< Precaution key={i} image ={card.img} title={card.title}/></div>
                 })
               }
             </div>
