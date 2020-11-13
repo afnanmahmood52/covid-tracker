@@ -70,7 +70,7 @@ export default function Prevention() {
           </div>
 
           <div className="right-col">
-            <img src={doctor} alt="doctor-syringe" data-aos="zoom-in" data-aos-duration="1300"/>
+            <img src={doctor} alt="doctor-syringe" data-aos="fade-left" data-aos-duration="1300"/>
           </div>
         </div>
 
