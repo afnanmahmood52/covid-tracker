@@ -7,6 +7,8 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Cards from '../Home/Cards/Cards'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
+
+// HomePage component
 export default function Home() {
   useEffect(()=>{
     AOS.init()
