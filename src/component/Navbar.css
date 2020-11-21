@@ -16,6 +16,9 @@
     margin-left: 10px;
 }
 
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
 
 .main-link {
     margin-left: 10px;
@@ -27,17 +30,17 @@
 .dial-headline, .for-Animation {
     text-align: center;
     background: rgb(141, 35, 35);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .dial-headline h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
-    margin-left: 1vw;
+    margin-left: 1.3vw;
     padding-top: 5px;
 }
 

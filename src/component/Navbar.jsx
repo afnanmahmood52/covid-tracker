@@ -42,7 +42,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto nav-custom-links main-links">
               <li className="nav-item nl">
                 <NavLink exact className="nav-link" to="/" activeClassName="active-nav" id="n-item" >

@@ -1,6 +1,6 @@
 import React,{ useState} from 'react'
 import "./Prevention.css"
-import doctor from "../../images/doctor.png"
+import doctor from "../../images/doctor.jpg"
 import cough from '../../images/symptom/cough.png'
 import fever from '../../images/symptom/fever.png'
 import shortBreath from '../../images/symptom/shortBreath.png'
