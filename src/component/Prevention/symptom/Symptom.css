@@ -32,6 +32,7 @@
 
 .desc-section >p{
     font-size: 1rem;
+    text-align: justify;
 }
 
 @media only screen and (max-width:1200px){

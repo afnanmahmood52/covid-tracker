@@ -43,7 +43,7 @@ export default function Prevention() {
             <div className="text-content" data-aos="fade-right" data-aos-duration="1300">
               <h4>What are the symptoms of COVID-19?</h4>
               <h1>Corona Virus SYMPTOMS</h1>
-              <h5>It can take up to 14 days for symptoms of coronavirus to appear. The main symptoms to look out for are:</h5>
+              <h5>It can take up to 14 days for the symptoms of coronavirus to appear. The main symptoms to look out for are:</h5>
             </div>
             
             <div className="indications">
