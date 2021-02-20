@@ -8,6 +8,7 @@ import Footer from './component/Footer/Footer';
 import Home from './component/Home/Home';
 import Navbar from './component/Navbar';
 import Prevention from './component/Prevention/Prevention';
+import NotFoundPage from './component/NotFoundPage/NotFound'
 
 import AOS from "aos"
 import "../node_modules/aos/dist/aos.css"
@@ -30,6 +31,7 @@ function App() {
             <Route path = "/FAQ" component = {FAQ}/>
             <Route path = "/contact" component = {Contact}/>    
             <Route exact path = "/" component = {Home}/>
+            <Route exact path = "*" component = {NotFoundPage}/>
         </Switch >
         
 
