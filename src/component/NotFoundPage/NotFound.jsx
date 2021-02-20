@@ -9,7 +9,8 @@ export default function NotFound() {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-2 col-md-1 col-lg-2"></div>
+            <div className="col-sm-8 col-md-10 col-lg-8">
                 {/* <div className="not-found-heading">
                     <p>Page Not Found!</p>
                 </div> */}
@@ -17,6 +18,7 @@ export default function NotFound() {
                     <img src={ErrorImage} alt={'error image'}/>
                 </div>
             </div>
+            <div className="col-sm-2 col-md-1 col-lg-2"></div>
         </div>
     </div>
   )
